@@ -61,7 +61,6 @@ dev_optional = [
     "fiona<=1.9.6;python_version<='3.8'",
     "geopandas",
     "inflect",
-    "jupyter",
     "numpy",
     "orjson",
     "pandas",
@@ -101,6 +100,7 @@ include = [
 
 [tool.hatch.build.targets.wheel.shared-data]
 # Specify files from this package which will be copied to the user's system on install
+# This is how the jupyterlab extension gets installed
 # Left path is the path within this package
 # Right path is the path on the user's system
 "plotly/labextension" = "share/jupyter/labextensions/jupyterlab-plotly"
