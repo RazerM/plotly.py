@@ -1,7 +1,7 @@
 module.exports = {
   optimization: {
-    moduleIds: 'deterministic',
-   chunkIds: 'deterministic',
-  realContentHash: true
+    moduleIds: 'natural',
+    chunkIds: 'natural',
+    realContentHash: true
   },
 };
